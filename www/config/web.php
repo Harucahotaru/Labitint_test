@@ -42,6 +42,14 @@ $config = [
                 ],
             ],
         ],
+        'formatter' => [
+            'class' => 'yii\i18n\Formatter',
+            'dateFormat' => 'php:j M Y',
+            'datetimeFormat' => 'php:Y.M.j H:i:s',
+            'timeFormat' => 'php:H:i',
+            'timeZone' => 'Europe/Moscow',
+            'defaultTimeZone' => 'Europe/Moscow',
+        ],
         'db' => $db,
 //        'urlManager' => [
 //            'enablePrettyUrl' => true,
@@ -52,7 +60,6 @@ $config = [
     ],
     'params' => $params,
 ];
-
 if (YII_ENV_DEV) {
     // configuration adjustments for 'dev' environment
     $config['bootstrap'][] = 'debug';
@@ -66,7 +73,7 @@ if (YII_ENV_DEV) {
     $config['modules']['gii'] = [
         'class' => 'yii\gii\Module',
         // uncomment the following to add your IP if you are not connecting from localhost.
-        //'allowedIPs' => ['127.0.0.1', '::1'],
+        'allowedIPs' => ['*'],
     ];
 }
 

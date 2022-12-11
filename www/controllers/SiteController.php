@@ -2,6 +2,7 @@
 
 namespace app\controllers;
 
+use app\models\NewsModel;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
@@ -61,6 +62,7 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
+        $a ->save();
         return $this->render('index');
     }
 

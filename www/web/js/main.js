@@ -1,4 +1,4 @@
-$("button").click(function()
+$(".button-update").click(function()
 {
     $.ajax({
         url: "/index.php?r=currency-weather/get-data",
