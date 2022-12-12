@@ -41,6 +41,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
         'items' => [
             ['label' => 'task_1', 'url' => ['/currency-weather']],
             ['label' => 'task_1', 'url' => ['/news']],
+            ['label' => 'task_1', 'url' => ['/evolution']],
         ]
     ]);
     NavBar::end();
